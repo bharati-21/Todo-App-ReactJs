@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    margin: 2%;
+    background-color: #251b1b
+}
+
+.mainHeader {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+}
+
+.mainHeader > img {
+    width: 80px;
+}
+
+.blink {
+    /*background-color: rgb(230, 25, 42);*/
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    color: #f77c50;   
+    font-size: 50px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.date {
+    margin-top: 2%;
+    color : #ff7094;
+    text-align: center;
+}
+#todo-container {
+    min-height: 500px;
+    margin:40px auto;
+    width: 800px;
+   box-shadow:  1px 1px rgba(0,0,0,0.15),
+            /* The second layer */
+        0 10px 0 -5px #f76c39,
+       
+            /* The third layer */
+        0 20px 0 -10px #ff926b,
+            /* The third layer shadow */
+        0 22px 0px -9px #fff;
+}
+
+
+
+#todo-list {
+    
+    padding: 2%;
+    min-height:500px;
+    background-color : #4d3e3e;
+}
+
+/* Form Head that wraps the input box and button*/
+#formHead {
+    display: flex;
+    background-color: #ffc38b;
+    justify-content: center;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.new-item-input {
+    margin-right: 1%;
+    font-family: 'Comic Sans MS';
+    flex-grow: 2;
+    border: 2px solid, white;
+    font-weight: bold;
+    padding: 2%;
+    border-radius: 100px;
+    font-size: 15px;
+    height: 50px;
+    color: #4d3e3e;
+    background-color: #fff3cd;
+    outline: none;
+    
+}
+
+
+.new-item-input:hover{
+    background-color: #aaa48d;
+    outline: none;
+}
+
+.submit:hover{
+    background-color: #7d7ea3;
+    outline: none;
+}
+
+
+.submit {
+    background-color : #ff926b;
+    font-family: "Comic Sans MS";
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+    color : #fff3cd;
+    font-weight: bold;
+    flex-wrap: wrap;
+    outline: none;
+}
+
+.items {
+ 
+    font-size: 15px;
+    display:flex;
+    word-wrap: break-word;
+
+    flex-direction: column;
+  }
+
+.text-icon-container
+{
+    background-color: #ff926b;
+    color: #251b1b;
+    font-weight: bold;
+    font-size: 15px;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 100px;
+    margin: 2% 0px 0px 0px;
+    display: flex;
+    min-height: max-content;
+    padding: 2% 2% 5px 2%;
+    flex-wrap: wrap;
+    min-height: 40px;
+    max-height: max-content;
+}
+
+.text-icon-container .checkIcon{
+    float: left;
+    align-self: center;
+    /*position: relative;*/
+    margin-right: 15px;
+    color: darkgreen;
+    margin-left: 10px;
+}
+
+
+
+
+.text-icon-container .editIcon {
+    float: left;
+    color: rgb(116, 88, 12);
+    margin-right: 10px;
+}
+
+.text-icon-container .deleteIcon {
+    float: right;
+    color:darkred;
+}
+.text-icon-container .icons{
+    align-self: center;
+    margin-left: 10px;
+    padding: 0% 0% 8px 0%;
+    float :right;
+}
+
+.text-icon-container .text {
+    width: 80%;
+    align-items: center;
+    align-self: center;
+    padding: 0% 0% 8px 0%;
+    margin-right: 2%;
+    font-weight: bold;
+}
+
+.text-icon-container .textDone {
+    width: 80%;
+    align-items: center;
+    align-self: center;
+    padding: 0% 0% 8px 0%;
+    margin-right: 2%;
+    font-weight: bold;
+    color:black;
+    text-decoration: line-through;
+}
+
+.checkedIcon {
+
+    float: left;
+    align-self: center;
+    /*position: relative;*/
+    margin-right: 15px;
+    color: rgb(62, 66, 62);
+    margin-left: 10px;
+}
+
+.checkedIcon :hover {
+    color: yellow;
+}
+.checkIcon :hover {
+    color : yellow;
+}
+
+.editIcon :hover {
+    color : yellow;
+}
+
+.deleteIcon  :hover {
+    color: yellow;
+}
+
+.deleteIcon :active {
+    color : grey;
+}
+
+.quotes {
+    margin: 3% auto;
+    display: flex;
+    justify-content: center;
+    -height: 10px;
+    max-width: max-content;
+    flex-wrap: wrap;
+    color: rgb(248, 177, 71);
+    padding: 1%;
+    border: 2px groove #f76c39;
+}
+
+.author {
+    float: right;
+    padding: 0% 1% 0% 0%;
+    color:rgb(159, 147, 233)
+}
+.editButton {
+    background-color:#07461a;
+    font-family: "Comic Sans MS";
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+    color : #fff3cd;
+    font-weight: bold;
+    flex-wrap: wrap;
+    outline: none;
+}
